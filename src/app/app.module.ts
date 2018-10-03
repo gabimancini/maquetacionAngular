@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'; 
 
 import { AppComponent } from './app.component';
 import { HeadertopComponent } from './shared/headertop/headertop.component';
@@ -12,8 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 //Rutas
 import { AppRoutingModule } from './app-routing.module';
-
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
