@@ -33,22 +33,31 @@ export class HeaderbottomComponent implements OnInit {
     const aboutImg: String = "../../assets/images/about-bg.jpg";
     const postImg: String = "../../assets/images/post-bg.jpg";
     const contactImg: String = "../../assets/images/contact-bg.jpg"; 
+    const homeTitle: String = "Clean Blog"; 
+    const aboutTitle: String = "Aout me"; 
+    const postTitle: String = "Man must explore, and this is exploration at its greatest"; 
+    const contactTitle: String = "Contact me"; 
 
     switch (url) {
       case "/home":
         this.bakcgroundImage = homeImg; 
+        this.headerTitle  = homeTitle;
         break;
       case "/about":
         this.bakcgroundImage = aboutImg;
+        this.headerTitle  = aboutTitle;
         break;
       case "/post":
         this.bakcgroundImage = postImg;
+        this.headerTitle  = postTitle;
         break;
       case "/contact":
         this.bakcgroundImage = contactImg;
+        this.headerTitle  = contactTitle;
         break;
       default:
-        this.bakcgroundImage = contactImg;
+        this.bakcgroundImage = homeImg;
+        this.headerTitle  = homeTitle;
         break;
     }
   }
