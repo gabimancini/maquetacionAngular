@@ -8,6 +8,7 @@ import { Router, NavigationEnd } from "@angular/router";
 })
 export class HeaderbottomComponent implements OnInit {
   bakcgroundImage: String;
+  headerTitle: String;
   // Inyectamos router en el constructor
   constructor(public route: Router) {
     // Luego de inyectarlo en el constructor, creamos un metodo para suscribirse a los cambios de ruta.
@@ -31,11 +32,11 @@ export class HeaderbottomComponent implements OnInit {
     const homeImg: String = "../../assets/images/home-bg.jpg";
     const aboutImg: String = "../../assets/images/about-bg.jpg";
     const postImg: String = "../../assets/images/post-bg.jpg";
-    const contactImg: String = "../../assets/images/contact-bg.jpg";
+    const contactImg: String = "../../assets/images/contact-bg.jpg"; 
 
     switch (url) {
       case "/home":
-        this.bakcgroundImage = homeImg;
+        this.bakcgroundImage = homeImg; 
         break;
       case "/about":
         this.bakcgroundImage = aboutImg;
